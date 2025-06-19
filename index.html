@@ -170,7 +170,7 @@
     <section class="portofolio-section" id="portofolio">
       <div class="container portofolio-content">
         <div class="row g-4 mb-4 d-flex justify-content-center">
-          <div class="main-text">
+          <div class="main-text" data-aos="zoom-in" data-aos-duration="600">
             <h2>Portofolio</h2>
             <p>Berikut adalah beberapa project yang pernah saya kerjakan.</p>
           </div>
@@ -292,14 +292,14 @@
     <!-- Blog Section Start ------------------------------------------------------------------------------------------------------------------------->
     <section class="blog-section" id="blog">
       <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="600">
           <h2>Artikel</h2>
           <p>Berikut beberapa artikel yang berkaitan dengan IT atau membahas tentang IT.</p>
         </div>
 
         <div class="row g-4">
           <!-- Artikel 1 -->
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
             <div class="blog-card">
               <img src="img/webdevelop.webp" alt="Web Development" />
               <div class="card-body d-flex flex-column">
@@ -313,7 +313,7 @@
           </div>
 
           <!-- Artikel 2 -->
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
             <div class="blog-card">
               <img src="img/backend.jpg" alt="Backend Developer" />
               <div class="card-body d-flex flex-column">
@@ -334,20 +334,20 @@
 
     <!-- Galery Section Start ----------------------------------------------------------------------------------------------------------------------->
     <section class="galery-section" id="galery">
-      <div class="main-text">
-        <h2>Galery</h2>
+      <div class="main-text" data-aos="zoom-in" data-aos-duration="600">
+        <h2>My Galery</h2>
         <p>Berikut adalah halaman galeri saya</p>
       </div>
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="galery-img">
-              <img height="300px" src="galery/Barbershop (1).jpg" alt="" />
-              <img height="300px" src="galery/IMG-20241006-WA0016.jpg" alt="" />
-              <img height="300" src="galery/IMG-20241019-WA0014.jpg" alt="" />
-              <img height="300" src="galery/IMG-20241025-WA0020.jpg" alt="" />
-              <img height="300px" src="galery/IMG-20241106-WA0010.jpg" alt="" />
-              <img height="300px" src="galery/IMG-20241006-WA0015.jpg" alt="" />
+              <img class="galeri-img1" height="300px" src="galery/Barbershop (1).jpg" alt="" data-aos="zoom-in" data-aos-duration="1000"/>
+              <img class="galeri-img2" height="400px" src="galery/IMG-20241006-WA0016.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000"/>
+              <img class="galeri-img3" height="350" src="galery/IMG-20241019-WA0014.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000"/>
+              <img class="galeri-img4" height="350" src="galery/IMG-20241025-WA0020.jpg" alt="" data-aos="zoom-in" data-aos-duration="800"/>
+              <img class="galeri-img5" height="300px" src="galery/IMG-20241106-WA0010.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000"/>
+              <img class="galeri-img6" height="400px" src="galery/IMG-20241006-WA0015.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000"/>
             </div>
           </div>
         </div>
@@ -359,10 +359,10 @@
   
     <!-- Sertifikat Section Start ----------------------------------------------------------------------------------------------------------------------->
     <section class="container my-5 pt-5 section-sertifikat" id="sertifikat">
-      <h2 class="text-center highlight mb-4">Testimoni & Sertifikat</h2>
+      <h2 class="text-center highlight" data-aos="zoom-in" data-aos-duration="600">Testimoni & Sertifikat</h2>
 
       <!-- Carousel Testimoni -->
-      <div id="testimonialCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div id="testimonialCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-aos="zoom-in" data-aos-duration="1000">
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
             <p class="testimonial-text">"Asto sangat profesional dan cepat dalam menyelesaikan proyek web development kami. Sangat direkomendasikan!"</p>
@@ -411,13 +411,13 @@
     <!-- Contact Section Start ----------------------------------------------------------------------------------------------------------------------->
     <section class="contact-section" id="contact">
       <div class="container">
-        <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="600">
-          <h2 class="highlight">Kontak Saya</h2>
+        <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1500">
+          <h2>Contact</h2>
           <p>Silakan hubungi saya melalui formulir di bawah atau melalui media sosial.</p>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-md-6" data-aos="zoom-in" data-aos-duration="600">
-            <form>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1500">
+            <form action="">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required />
@@ -430,10 +430,12 @@
                 <label for="message" class="form-label">Pesan</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
               </div>
-              <button type="submit" class="btn btn-info text-white button-contact">Kirim</button>
+              <div class="btn-box text-center">
+                <button type="submit" class="btn" style="width: 100%;">Kirim</button>
+              </div>
             </form>
           </div>
-          <div class="col-md-4 mt-4 contact-info align-items-center" data-aos="zoom-in" data-aos-duration="600">
+          <div class="col-md-4 mt-4 contact-info align-items-center" data-aos="zoom-in" data-aos-duration="1500">
             <h5>Info Kontak</h5>
             <p><i class="fas fa-envelope"></i> astoumbu001@gmail.com</p>
             <p><i class="fas fa-phone"></i> +62 853 5084 0746</p>
